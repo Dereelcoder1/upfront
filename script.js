@@ -63,6 +63,21 @@ document.addEventListener("DOMContentLoaded", () => {
   
     card.addEventListener("mouseleave", () => {
       card.style.boxShadow = "none"
+    });
+
+
+
+
+
+
+
+    // mobile responsiveness
+
+    const hamburger = document.querySelector("#hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
     })
   })
   
