@@ -75,9 +75,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const hamburger = document.querySelector("#hamburger");
     const navLinks = document.querySelector(".nav-links");
+    const navClicked = document.querySelectorAll(".naved")
 
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("open");
-    })
+    });
+
+    navClicked.forEach((nav => {
+      nav.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+      })
+    }))
   })
   
