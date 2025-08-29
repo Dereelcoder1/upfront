@@ -271,6 +271,12 @@
       font-size: 0.9rem;
   }
   
+  .project-info .completion {
+      color: var(--gray-text);
+      font-size: 0.9rem;
+      margin-top: 5px;
+  }
+  
   /* Experience Section */
   .experience {
       background-color: var(--darker-bg);
